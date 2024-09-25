@@ -2,31 +2,95 @@
 <html>
 <head>
    <title>Andy's Blog</title>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
    <style>
       body {
          background-color: powderblue;
+         font-family: 'Open Sans', sans-serif;
+         margin: 0;
+         padding: 20px;
       }
-      p {
-         font: 100%/1.0 "Times New Roman";
-         max-width: 60em;
+      header {
+         background-color: #333;
+         padding: 10px;
+         text-align: center;
+      }
+      nav ul {
+         list-style: none;
+         padding: 0;
+      }
+      nav ul li {
+         display: inline;
+         margin: 0 15px;
+      }
+      nav ul li a {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+      }
+      nav ul li a:hover {
+         text-decoration: underline;
+      }
+      .container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1, p {
+         margin-bottom: 20px;
+      }
+      img {
+         width: 300px;
+         max-width: 100%;
+         height: auto;
+         display: block;
+         margin: 0 auto;
+      }
+      a {
+         color: #0066cc;
+         text-decoration: none;
+      }
+      a:hover {
+         color: #ff6600;
+         text-decoration: underline;
+      }
+      footer {
+         background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 20px 0;
+         position: fixed;
+         width: 100%;
+         bottom: 0;
       }
    </style>
 </head>
-
 <body>
-   <h1>Saigon</h1>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#saigon">Saigon</a></li>
+            <li><a href="#tokyo">Tokyo</a></li>
+         </ul>
+      </nav>
+   </header>
 
-   <img src="https://i.imgur.com/HHpSUAg.jpeg" alt="View of Saigon" width="300"/>
+   <div class="container">
+      <h1 id="saigon">Saigon</h1>
+      <img src="https://i.imgur.com/HHpSUAg.jpeg" alt="View of Saigon"/>
+      <p>This is a photo of the view at the top of my hotel overlooking the view of Saigon, Vietnam.</p>
 
-   <p>This is a photo of the view at the top of my hotel overlooking the view of Saigon, Vietnam</p>
+      <h1 id="tokyo">Tokyo</h1>
+      <img src="https://i.imgur.com/43T56WO.jpeg" alt="Shibuya Crossing"/>
+      <p>This is a photo of Shibuya Crossing, a popular tourist attraction for first-time travelers to Japan. Here are some other places that I want to go to: 
+      <a href="https://vietnam.travel/things-to-do">Vietnam Travel Things!</a></p>
+   </div>
 
-   <h1>Tokyo</h1>
-
-   <img src="https://i.imgur.com/43T56WO.jpeg" alt="Shibuya Crossing" width="300"/>
-
-   <p>This is a photo of Shibuya Crossing, a popular tourist attraction for first-time travelers to Japan. Here are some other places that I want to go to: 
-   <a href="https://vietnam.travel/things-to-do">Vietnam Travel Things!</a>
-   </p>
-
+   <footer>
+      <p>&copy; 2024 Andy's Blog. All rights reserved.</p>
+   </footer>
 </body>
 </html>
